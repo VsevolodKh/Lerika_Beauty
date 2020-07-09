@@ -13,16 +13,19 @@
         padding-right: 5px
         text-transform: uppercase
         text-align: center
-        // &:after
-        //     content: ''
-        //     display: block
-        //     height: 1px
-        //     width: 0%
-        //     background-color: #fff
-        //     transition: 0.5s all
-        // &:hover
-        //     &:after
-        //         width: 80%
+        position: relative
+        &:after
+            content: ''
+            position: absolute
+            top: 100%
+            left: 0
+            height: 1px
+            width: 0%
+            background-color: #fff
+            transition: 0.5s all
+        &:hover
+            &:after
+                width: 70%
     &_contacts
         padding: 20px
     &_sosial
