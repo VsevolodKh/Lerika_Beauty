@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- <link rel="stylesheet" href="css/font.css"> -->
+
     <link rel="stylesheet" href="css/style.min.css">
     <title>Lerika Beauty</title>
 
@@ -12,27 +13,27 @@
 <body>
     <section class="header" id=up>
         <div class="container">
-            <div class="wrapper">
-                <div class="header_logo">Lerika Beauty</div>
-                <div class="header_nav">
-                    <a href="#children" class="children_nav scroll-to">
+            <div class="header__wrapper">
+                <div class="header__logo">Lerika Beauty</div>
+                <div class="header__nav">
+                    <a href="#children" class="header__nav_children scroll-to">
                         Дети
                     </a>
-                    <a href="#men" class="children_nav scroll-to">
+                    <a href="#men" class="header__nav_men scroll-to">
                         Мужчины
                     </a>
-                    <a href="#wemen" class="children_nav scroll-to">
+                    <a href="#wemen" class="header__nav_wemen scroll-to">
                         Женщины
                     </a>
                 </div>
-                <div class="header_contacts">
-                    <a href="tel:+79199105115" class="header_phone">+7(919) 901 51 15</a>
-                    <div class="header_sosial">
-                        <a class="vk" href="http://vk.com">
-                            <img src="icons/sosial/vk.svg" alt="vk">
+                <div class="header__contacts">
+                    <a href="tel:+79199105115" class="header__contacts_phone">+7(919) 901 51 15</a>
+                    <div class="header__sosial">
+                        <a class="header__sosial_vk" href="http://vk.com">
+                            <img src="icons/sosial/vk.svg" class="sosial__img" alt="vk">
                         </a>
-                        <a class="inst" href="http://instagram.com">
-                            <img src="icons/sosial/instagram.svg" alt="instagram">
+                        <a class="header__sosial_inst" href="http://instagram.com">
+                            <img src="icons/sosial/instagram.svg" class="sosial__img" alt="instagram">
                         </a>
                     </div>
                 </div>
@@ -118,11 +119,16 @@
     </section>
 
     <footer class="footer">
-        <div class="footer_copyright">
-            @ 2020, Copyright
+        <div class="footer_sosial">
+            <a class="vk" href="http://vk.com">
+                <img src="icons/sosial/vk.svg" class="sosial__img" alt="vk">
+            </a>
+            <a class="inst" href="http://instagram.com">
+                <img src="icons/sosial/instagram.svg" class="sosial__img" alt="instagram">
+            </a>
         </div>
         <div class="footer_designt">
-            Designt by Vsevolod Khodyrev
+            @ 2020, Copyright
         </div>
     </footer>
 

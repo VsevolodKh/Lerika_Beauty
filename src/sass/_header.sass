@@ -1,53 +1,55 @@
 .header
     min-height: 100px
     background-color: rgba(0,0,0, .99)
-    &_logo
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logo
         color: #ffffff
         font-size: 47px
-    &_nav
+    &__nav
         font-size: 20px
         font-weight: 500
-    a
-        color: #ffffff
-        text-decoration: none
-        padding-right: 5px
-        text-transform: uppercase
-        text-align: center
-        position: relative
-        &:after
-            content: ''
-            position: absolute
-            top: 100%
-            left: 0
-            height: 1px
-            width: 0%
-            background-color: #fff
-            transition: 0.5s all
-        &:hover
+        &_children, &_men
+            margin-right: 5px
+        a
+            color: #ffffff
+            text-decoration: none
+            text-transform: uppercase
+            text-align: center
+            position: relative
             &:after
-                width: 70%
-    &_contacts
+                content: ''
+                position: absolute
+                top: 100%
+                left: 0
+                height: 1px
+                width: 0%
+                background-color: #fff
+                transition: 0.5s all
+            &:hover
+                &:after
+                    width: 95%
+    &__contacts
         padding: 20px
-    &_sosial
-        padding: 5px
-        display: flex
-        justify-content: flex-end       
-    &_phone
-        color: #ffffff
-        font-size: 20px
-        text-align: center
-        text-decoration: none
+        &_phone
+            color: #ffffff
+            font-size: 20px
+            text-align: center
+            text-decoration: none
         &:hover
             color: #ffffff
-img
+    &__sosial
+        display: flex
+        justify-content: flex-end 
+        &_vk
+            margin-right: 7px         
+.sosial__img
     width: 25px
     height: 25px
-.wrapper
-    display: flex
-    justify-content: space-between
-    align-items: center
-.vk
-    padding-right: 7px
+
+
 
             
     
