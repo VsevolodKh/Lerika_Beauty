@@ -1,17 +1,30 @@
 // Smooth scroll
 
-const anchors = document.querySelectorAll('a.scroll-to')
+$(function(){
 
-for (let anchor of anchors) {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault()
-    
-    const blockID = anchor.getAttribute('href')
-    
-    document.querySelector(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
-    })
-  })
-}
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 900) {
+        $('.pageup').fadeIn();
+    } else {
+        $('.pageup').fadeOut();
+    }
+});
+
+  $("a[href^='#']").click(function(){
+          var _href = $(this).attr("href");
+          $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+          return false;
+  });
+
+  // Modal
+
+  $('[data-modal=booking]').on('click', function() {
+    $('.overlay, #booking').fadeIn();
+  });
+
+  $('.modal__close').on('click', function() {
+      $('.overlay, #consultation, #order, #thanks').fadeOut();
+  });
+
+});
 

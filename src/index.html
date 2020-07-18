@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <title>Lerika Beauty</title>
 
 </head>
@@ -26,7 +27,7 @@
                     </a>
                 </div>
                 <div class="header__contacts">
-                    <a href="tel:+79199105115" class="header__contacts_phone">+7(919) 901 51 15</a>
+                    <a href="tel:+79199105115" class="header__contacts_phone">+7 (919) 901 51 15</a>
                     <div class="header__sosial">
                         <a class="header__sosial_vk" href="https://vk.com/lerika018">
                             <img src="icons/sosial/vk.svg" class="sosial__img" alt="vk">
@@ -46,7 +47,7 @@
             <div class="promo__header">
                 <h1 class="promo__title">Стильные и недорогие стрижки</h1>
                 <h2 class="promo__subtitle">Это просто!</h2>
-                <button class="button">Записаться</button>
+                <button data-modal="booking" class="button">Записаться</button>
             </div>  
         </div>
     </section>
@@ -101,7 +102,7 @@
                             </ul>
                     </div>
                 </div>
-                <button class="button button_subbutton">Записаться</button>
+                <button data-modal="booking" class="button button_subbutton">Записаться</button>
         </div>
     </section>
 
@@ -132,7 +133,7 @@
     </footer>
 
     <div class="overlay">
-        <div class="modal" id="order">
+        <div class="modal" id="booking">
             <div class="modal__close">&times;</div>
                 <div class="modal__subtitle">Заполните форму</div>
                 <form class="feed-form" action="#">
