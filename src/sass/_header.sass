@@ -1,18 +1,23 @@
 .header
-    min-height: 100px
+    min-height: 80px
     background-color: rgba(0,0,0, .99)
+    padding-top: 20px
     &__wrapper
         display: flex
         justify-content: space-between
         align-items: center
     &__logo
-        color: #ffffff
-        font-size: 47px
+        width: 220px
+        height: 55px
     &__nav
         font-size: 20px
         font-weight: 500
+        &_list
+            display: flex
+            justify-content: center
+            align-items: center
         &_children, &_men
-            margin-right: 7px
+            margin-right: 10px
         a
             color: #ffffff
             text-decoration: none
@@ -30,9 +35,8 @@
                 transition: 0.5s all
             &:hover
                 &:after
-                    width: 95%
+                    width: 100%
     &__contacts
-        padding: 20px
         &_phone
             color: #ffffff
             font-size: 20px
@@ -42,9 +46,10 @@
             color: #ffffff
     &__sosial
         display: flex
-        justify-content: flex-end 
-        margin-top: 5px
-        &_vk
+        justify-content: flex-end
+        align-items: center
+        margin-top: 7px
+        &_vk, &_inst, &_whapp
             margin-right: 7px         
 .sosial__img
     width: 25px

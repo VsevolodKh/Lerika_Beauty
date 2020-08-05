@@ -10,21 +10,25 @@ $(function(){
     }
 });
 
-  $("a[href^='#']").click(function(){
-          var _href = $(this).attr("href");
-          $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-          return false;
-  });
+$("a[href^='#']").click(function(){
+        var _href = $(this).attr("href");
+        $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+        return false;
+});
 
-  // Modal
+// Modal
 
-  $('[data-modal=booking]').on('click', function() {
-    $('.overlay, #booking').fadeIn();
-  });
+$('[data-modal=booking]').on('click', function() {
+  $('.overlay, #booking').fadeIn();
+});
 
-  $('.modal__close').on('click', function() {
-      $('.overlay, #consultation, #order, #thanks').fadeOut();
-  });
+$('.modal__close').on('click', function() {
+    $('.overlay, #consultation, #order, #thanks').fadeOut();
+});
+
+  // Input mask
+
+$(".mask").mask(" +7 (999) 999-99-99");
 
 });
 

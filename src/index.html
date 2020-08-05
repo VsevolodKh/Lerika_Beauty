@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.min.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <title>Lerika Beauty</title>
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
 
 </head>
 <body>
     <section class="header" id=up>
         <div class="container">
             <div class="header__wrapper">
-                <div class="header__logo">Lerika Beauty</div>
+                <img src="img/logo.png" alt="" class="header__logo">
                 <div class="header__nav">
-                    <a href="#children" class="header__nav_children scroll-to">
-                        Дети
-                    </a>
-                    <a href="#men" class="header__nav_men scroll-to">
-                        Мужчины
-                    </a>
-                    <a href="#wemen" class="header__nav_wemen scroll-to">
-                        Женщины
-                    </a>
+                    <ul class="header__nav_list">
+                        <li class="header__nav_item">
+                            <a href="#children" class="header__nav_children scroll-to">
+                                Дети
+                            </a>
+                        </li>
+                        <li class="header__nav_item">
+                            <a href="#men" class="header__nav_men scroll-to">
+                                Мужчины
+                            </a>
+                        </li>
+                        <li class="header__nav_item">
+                            <a href="#wemen" class="header__nav_wemen scroll-to">
+                                Женщины
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="header__contacts">
                     <a href="tel:+79199105115" class="header__contacts_phone">+7 (919) 901 51 15</a>
@@ -34,6 +42,12 @@
                         </a>
                         <a class="header__sosial_inst" href="http://instagram.com">
                             <img src="icons/sosial/instagram.svg" class="sosial__img" alt="instagram">
+                        </a>
+                        <a class="header__sosial_whapp" href="https://wa.me/79199015115">
+                            <img src="icons/sosial/whatsapp.svg" class="sosial__img" alt="whatsapp">
+                        </a>
+                        <a class="header__sosial_viber" href="https://viber.click/79199015115">
+                            <img src="icons/sosial/viber.svg" class="sosial__img" alt="viber">
                         </a>
                     </div>
                 </div>
@@ -47,7 +61,7 @@
             <div class="promo__header">
                 <h1 class="promo__title">Стильные и недорогие стрижки</h1>
                 <h2 class="promo__subtitle">Это просто!</h2>
-                <button data-modal="booking" class="button">Записаться</button>
+                <button data-modal="booking" class="button button_animated">Записаться</button>
             </div>  
         </div>
     </section>
@@ -102,19 +116,19 @@
                             </ul>
                     </div>
                 </div>
-                <button data-modal="booking" class="button button_subbutton">Записаться</button>
+                <button data-modal="booking" class="button button_animated button_subbutton">Записаться</button>
         </div>
     </section>
 
     <section class="men" id=men>
         <div class="container">
-            <h2 class="title title_men">Мужские стрижки</h2>
+            <h2 class="title title_men">Мужские услуги</h2>
         </div>
     </section>
 
     <section class="wemen" id=wemen>
         <div class="container">
-            <h2 class="title title_wemen">Женские стрижки</h2>
+            <h2 class="title title_wemen">Женские услуги</h2>
         </div>
     </section>
 
@@ -125,6 +139,12 @@
             </a>
             <a class="footer__sosial_inst" href="http://instagram.com">
                 <img src="icons/sosial/instagram.svg" class="sosial__img" alt="instagram">
+            </a>
+            <a class="header__sosial_whapp" href="https://wa.me/79199015115">
+                <img src="icons/sosial/whatsapp.svg" class="sosial__img" alt="whatsapp">
+            </a>
+            <a class="header__sosial_viber" href="https://viber.click/79199015115">
+                <img src="icons/sosial/viber.svg" class="sosial__img" alt="viber">
             </a>
         </div>
         <div class="footer__designt">
@@ -151,6 +171,7 @@
         <img src="icons/chevron-circle-up-solid.svg" alt="Page Up">
     </a>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/script.js"></script>
 
 </body>
