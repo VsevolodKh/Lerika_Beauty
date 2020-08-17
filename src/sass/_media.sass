@@ -20,9 +20,8 @@
             margin-top: 55px
     .title
         font-size: 38px
-        &__children
-            &_boys, &_girls
-                font-size: 33px
+        &__mini
+            font-size: 33px
     .children
         min-height: 561px
         padding: 30px 20px 0 20px
@@ -40,9 +39,8 @@
 @media screen and ( max-width: 768px )
     .title
         font-size: 32px
-        &__children
-            &_boys, &_girls
-                font-size: 25px
+        &__mini
+            font-size: 25px
     .button
         &_subbutton
             width: 200px
@@ -105,11 +103,19 @@
 @media screen and ( max-width: 575px )
     .xs_hidden
         display: none
+    .modal
+        width: 250px
+        min-height: 250px
+        padding: 30px 20px 20px 20px
+        &__mini
+            width: 250px
+            min-height: 100px
+    .feed-form
+        width: 100%
     .title
         font-size: 30px
-        &__children
-            &_boys, &_girls
-                font-size: 24px
+        &__mini
+            font-size: 24px
     .header
         min-height: 
     .promo
@@ -129,9 +135,8 @@
 @media screen and ( max-width: 414px )
     .title
         font-size: 20px
-        &__children
-            &_boys, &_girls
-                font-size: 18px
+        &__mini
+            font-size: 18px
     .price
         font-size: 20px
     .button
@@ -142,6 +147,9 @@
         &__img
             width: 20px
             height: 20px
+    .pageup
+        bottom: 20px
+        right: 15px
     .header
         min-height: 60px
         &__logo
@@ -196,7 +204,97 @@
                 margin-top: 20px
                 font-size: 17px
                 line-height: 35px
+@media screen and ( max-width: 375px )
+    .modal
+        &__close
+            right: -25px
+    .promo
+        min-height: 310px
+        &__header
+            width: 245px
+        &__title
+            font-size: 17px
+            line-height: 30px
+        &__subtitle
+            font-size: 33px
+    .advantages
+        min-height: 210px
+@media screen and ( max-width: 320px )
+    .sosial__img
+        width: 17px
+        height: 17px
+    .modal
+        width: 220px
+        &__close
+            right: -25px
+        &__mini
+            min-height: 90px
+            &_subtitle
+                font-size: 17px
+            &_descr
+                font-size: 14px
+    .title
+        font-size: 18px
+        &__mini
+            font-size: 16px
+    .price
+        font-size: 17px
+    .button
+        &__main
+            width: 70%
+            height: 45px
+            margin-top: 75px
+        &_subbutton
+            width: 160px
+            height: 45px
+            margin-top: 30px
+        &_submit
+            margin-top: 10px
 
+    .header
+        min-height: 57px
+        padding: 15px 15px 0 15px
+        &__logo
+            width: 140px
+            height: 35px
+        &__contacts
+            &_phone
+                font-size: 14px
+    .promo
+        min-height: 290px
+        &__header
+            width: 220px
+        &__title
+            font-size: 15px
+        &__subtitle
+            font-size: 30px
+    .advantages
+        min-height: 180px
+        &__list
+            margin-top: 20px
+            &_items
+                font-size: 14px
+                line-height: 28px
+    .children
+        min-height: 480px
+        &__boys, &__girls
+            &_services
+                margin-top: 15px
+                font-size: 15px
+                line-height: 32px
+    .men
+        min-height: 315px
+        &__services
+            &_list
+                font-size: 16px
+                line-height: 32px
+    .wemen
+        min-height: 340px
+        &__services
+            &_list
+                font-size: 16px
+                line-height: 32px
+    
 
     
         
