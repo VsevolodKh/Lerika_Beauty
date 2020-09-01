@@ -42,5 +42,9 @@ $('form').submit(function(e) {
   return false;
 });
 
+// Mask
+
+$('input[name=phone]').mask("+7 (999) 999-99-99");
+
 });
 
